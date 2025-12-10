@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'You found me! 🦊')
+@section('title', 'You found us!')
 
 @section('content')
     <style>
@@ -31,7 +31,6 @@
         }
     </style>
 
-    <h2>you found me :3</h2>
-    <img id="fox-image" src="https://www.pcgamesn.com/wp-content/sites/pcgamesn/2019/12/minecraft-fox-how-to-tame.jpg"
-        alt="Fox">
+    <h2>rawr! you found us :3</h2>
+    <img id="fox-image" src="{{ asset('images/foxes.jpeg') }}" alt="Fox">
 @endsection

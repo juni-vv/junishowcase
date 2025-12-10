@@ -138,6 +138,22 @@
             outline: none;
             transition: all 0.2s ease;
         }
+
+        #e {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            font-size: 1.5rem;
+            opacity: 0;
+            cursor: pointer;
+            transition: opacity 0.3s ease, transform 0.3s ease;
+            z-index: 9999;
+        }
+
+        #e:hover {
+            opacity: 1;
+            transform: scale(1.5) rotate(20deg);
+        }
     </style>
 
     @for ($i = 0; $i < 20; $i++)
@@ -210,6 +226,10 @@
                 <textarea name="message" rows="4" class="form-control mb-3" placeholder="Say hi! Rawrr~ :3"></textarea>
                 <button type="submit">✨Send itttt✨</button>
             </form>
+
+            <div>
+                <h4 id="e" onclick="window.location='{{ url('/fox') }}'">🐾</h4>
+            </div>
         </div>
     </div>
 @endsection

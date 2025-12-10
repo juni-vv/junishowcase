@@ -184,8 +184,8 @@
             <p>I program when my paws feel inspired. Seeing my clicks turn into magic makes me happy :3</p>
 
             <h3>Projects & Tools</h3>
-            <p>Check my shiny creations on the <a href="{{ url('/') }}">homepage</a>! ✨</p>
-            <p>VS Code is my wand hehe. I craft whimsical things on a whim!</p>
+            <p>Check my shiny creations in the <a href="{{ url('/') }}">future</a>! ✨</p>
+            <p>VS Code is my magic wand hehe. I craft whimsical things on a whim!</p>
 
             <h3>Fun Facts About Me</h3>
             <ul>
@@ -196,7 +196,7 @@
             <h3>Contact this cute fox</h3>
             <p>Email me at <a href="mailto:jvdvelde2005@gmail.com">jvdvelde2005@gmail.com</a> or say hi below! 🦊</p>
 
-            <form action="{{ url('/contact') }}" method="POST" class="contact-form mb-4">
+            <form class="contact-form mb-4">
                 @csrf
                 <div class="row mb-3">
                     <div class="col-md-6">

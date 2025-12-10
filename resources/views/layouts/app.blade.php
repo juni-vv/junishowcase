@@ -35,19 +35,6 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
-            <a class="navbar-brand" href="{{ url('/') }}">Juniper van der Velde</a>
-            <div class="collapse navbar-collapse">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="{{ url('/') }}">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{ url('/downloads') }}">Downloads</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{ url('/about') }}">About</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
     <div class="container">
         @yield('content')
     </div>

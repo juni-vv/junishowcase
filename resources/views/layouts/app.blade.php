@@ -8,6 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
+            min-height: 100vh;
             background: radial-gradient(circle at 20% 30%, #1a102d, #05030a 70%);
         }
 
@@ -104,6 +105,12 @@
             align-items: center;
             padding: 20px 0;
         }
+
+
+        .content {
+            position: relative;
+            z-index: 1;
+        }
     </style>
 </head>
 
@@ -124,7 +131,7 @@
                 <div class="collapse navbar-collapse" id="navbarMenu">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item"><a class="nav-link" href="{{ url('/') }}">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="{{ url('/downloads') }}">Downloads</a></li>
+                        <!--<li class="nav-item"><a class="nav-link" href="{{ url('/downloads') }}">Downloads</a></li>-->
                         <li class="nav-item"><a class="nav-link" href="{{ url('/about') }}">About</a></li>
                     </ul>
                 </div>
@@ -132,7 +139,7 @@
         </nav>
     @endif
 
-    <div class="container">
+    <div class="container content">
         @yield('content')
     </div>
 

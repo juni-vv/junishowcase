@@ -10,14 +10,9 @@ class MainController extends Controller
     {
         $projects = [
             [
-                'name' => 'Laravel App 1',
-                'description' => 'A cool Laravel project.',
-                'link' => url('/project1')
-            ],
-            [
-                'name' => 'Downloadable Tool',
-                'description' => 'Some utility you can download.',
-                'link' => url('/downloads/tool.zip')
+                'name' => 'Wave!',
+                'description' => 'A 2D game that tests your reflexes.',
+                'link' => url('https://github.com/juni-vv/wave')
             ]
         ];
 

@@ -93,22 +93,34 @@
             transform: scale(1.15) rotate(-5deg);
             box-shadow: 0 5px 18px rgba(255, 105, 180, 0.6);
         }
+
+        .floaty-wrapper {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            pointer-events: none;
+            overflow: hidden;
+            z-index: 0;
+        }
     </style>
 
     <div class="row justify-content-center" style="max-width: 1920px; margin:auto;">
 
-        {{-- floating sparkles + hearts --}}
-        @for ($i = 0; $i < 18; $i++)
-            <div class="floaty"
-                style="
+        <div class="floaty-wrapper">
+            @for ($i = 0; $i < 18; $i++)
+                <div class="floaty"
+                    style="
                 left: {{ rand(0, 95) }}vw;
                 top: {{ rand(0, 90) }}vh;
                 animation-delay: {{ rand(0, 5) }}s;
                 font-size: {{ rand(14, 28) }}px;
             ">
-                {{ rand(0, 1) ? '✨' : '❤️' }}
-            </div>
-        @endfor
+                    {{ rand(0, 1) ? '✨' : '❤️' }}
+                </div>
+            @endfor
+        </div>
 
         <h1 class="mb-4 text-center">My Sparkly Projects</h1>
 

@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('title', 'You found us!')
+@php($showNavbar = false)
 
 @section('content')
     <style>

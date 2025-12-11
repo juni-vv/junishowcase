@@ -173,8 +173,10 @@
 
     <div class="row justify-content-center" style="max-width: 1920px; margin:auto;">
 
+        <audio id="rawr-audio" src="{{ asset('sounds/rawr.wav') }}"></audio>
+
         <div class="col-md-6" id="text-column">
-            <h1>Rawr! I'm <strong>Juniper</strong> :3</h1>
+            <h1 class="user-select-none"><span id="rawr">Rawr!</span> I'm <strong>Juniper</strong> :3</h1>
             <p>I'm a {{ $age }}-year-old fox creature who types code with sparkles in my paws ✨</p>
             <p>I make games, mods, route diagrams, PDFs, and weird adorable things just for fun! Waff waff~ :3</p>
 
@@ -232,4 +234,14 @@
             </div>
         </div>
     </div>
+
+    <script>
+        const sound = document.getElementById('rawr-audio');
+        const trigger = document.getElementById('rawr');
+
+        trigger.addEventListener('click', () => {
+            sound.currentTime = 0;
+            sound.play();
+        });
+    </script>
 @endsection
